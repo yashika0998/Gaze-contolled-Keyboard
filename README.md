@@ -21,18 +21,18 @@ Here real time video detction from the webcam will be applied to detect the fram
 
 * Right eye points: (42, 43, 44, 45, 46, 47)
 
-![](Images/face_landmarks.jpg)
+![](Images/face_landmarks.JPG)
 
 ### 1.2 Detecting the blinking
 After we detect the eye. we detect the 2 lines: an horizontal line and a vertical line crossing the eye.
 
 Visual of eye when the it is open.
 
-![](Images/eye_open.png)
+![](Images/eye_open.jpg)
 
 Visual of eye when it is closed.
 
-![](Images/eye_closed.png)
+![](Images/eye_closed.jpg)
 
 Taking the horizontal line as the point of reference, we calculate the ratio in comparison with the vertical line. If this ratio is more than 5.7 than the eyes are blinking otherwise they are open.
 
@@ -44,7 +44,7 @@ Here is how virtual keyboard is divided
 
 Hence for that we need to detect the gaze of our eyes. The possible direction of gaze are shown in image below.
 
-![](Images/different_direction_of_eye.jpg)
+![](Images/different_direction_of_eye.png)
 
 
 
