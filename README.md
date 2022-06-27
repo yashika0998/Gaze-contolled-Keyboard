@@ -34,7 +34,8 @@ Visual of eye when it is closed.
 
 ![](Images/eye_closed.jpg)
 
-Taking the horizontal line as the point of reference, we calculate the ratio in comparison with the vertical line. If this ratio is more than 5.7 than the eyes are blinking otherwise they are open.
+ratio = hor_line_lenght / ver_line_lenght
+By calculating the ratio of length of horizontal line to vertical line. We observed if the ratio is more than 6.0, the eye are closed. Hence after improving this parameter to near 5.5-5.7 gives more accuracy of blinking the eye.
 
 ### 1.3 Gaze Detection
 The idea is to divide the keyboard into two parts. The part of keyboard either left or right focused by eye, gets activated and light up.
