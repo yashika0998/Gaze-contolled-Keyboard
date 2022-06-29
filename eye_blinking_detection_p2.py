@@ -51,7 +51,7 @@ while True:
         blinking_ratio = (left_eye_ratio + right_eye_ratio) / 2
 
         if blinking_ratio > 5.5:
-            cv2.putText(frame, "BLINKING", (50, 150), font, 6  v , (255,0, 0))
+            cv2.putText(frame, "BLINKING", (50, 150), font, 6 , (255,0, 0))
 
 
     cv2.imshow("Frame", frame)
