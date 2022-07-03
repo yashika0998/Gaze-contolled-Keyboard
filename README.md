@@ -64,7 +64,7 @@ The idea is to choose the left or right keyboard that we already divided and dis
 
 Using mathematical logic in numpy and cv2 libraries, we create the keyboard.
 
-![](Images/virtual_keyboard.png)
+![](Images/virtual_keyboard.jpg)
 
 This is a left side keyboard.
 
@@ -75,7 +75,7 @@ Letterswill lght up after every 10 frames to reach the letter we want to press. 
 
 I have tried of typing the word WELL
 
-![](Images/output.png)
+![](Images/output.JPG)
 
 
 
