@@ -47,6 +47,46 @@ Hence for that we need to detect the gaze of our eyes. The possible direction of
 
 ![](Images/different_direction_of_eye.png)
 
+The idea is to split the eye in two parts and to find out in which of the two parts there is more sclera (white part of eye) visible.
+
+![](Images/2_division_eye.png)
+
+If the sclera is more visible on the right part, so the eye is looking at the left (our left) like in picture attached above. Moreover to detect the sclera we convert the eye into grayscale, then finding a **threshold** helps us to count the white pixels.
+
+We divide the white pixels of the left part and those of the right part to achieve the gaze ratio. 
+
+* If the gaze ratio < 1: looking to the right. 
+
+* If gaze ratio > 1.7 the eyes are looking to the left side.
+
+### 2.1 Virtual Keyboard
+The idea is to choose the left or right keyboard that we already divided and display the Keys on the screen. Light up the key one at time according to the pace of your blink. The key you want to choose should be lighted up, and then blink your eyes for longer than 1 second. This will allow the letter to be typed on white board along with a beep sound.
+
+Using mathematical logic in numpy and cv2 libraries, we create the keyboard.
+
+![](Images/virtual_keyboard.png)
+
+This is a left side keyboard.
+
+### 2.2 Light up letters each 10 frames
+Letterswill lght up after every 10 frames to reach the letter we want to press. Blinking eye for longer will type the key.
+
+## Final result
+
+I have tried of typing the word WELL
+
+![](Images/output.png)
+
+
+
+#### Inspiration From
+Pyscource blogs by Sergio Canu
+
+#### Author
+
+Yashika Mittal (yashika0998)
+
+https://www.linkedin.com/in/yashika-mittal/
 
 
 
