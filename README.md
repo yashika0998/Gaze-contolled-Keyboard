@@ -15,7 +15,7 @@ This project is built in two main parts:
 * **Virtual keyboard**: A keyboard on the screen where we’re going to select the letters by just using/blinking our eyes.
 
 ### 1.1 Eye detection
-Here real time video detction from the webcam will be applied to detect the frames. To detect the eyes we will use face landmark detection approach. We will be able to find 68 specific landmarks of the face usinf dlib library. To each point there is a specific index assigned. Hence, we will use the following landmark points to detect the eye.
+Here real time video detection from the webcam will be applied to detect the frames. To detect the eyes we will use face landmark detection approach. We will be able to find 68 specific landmarks of the face usinf dlib library. To each point there is a specific index assigned. Hence, we will use the following landmark points to detect the eye.
 
 * Left eye points: (36, 37, 38, 39, 40, 41)
 
